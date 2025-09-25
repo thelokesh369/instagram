@@ -10,36 +10,23 @@
 </head>
 <body>
     <div class="phone-container">
-        <div class="status-bar">
-            <div class="status-left">2:28</div>
-            <div class="status-right">
-                <span>🔗</span>
-                <span>🔔</span>
-                <span>📶</span>
-                <span>52</span>
-            </div>
-        </div>
+        
  <div id="profilePage" class="page">
-            <div class="header">
-                <svg class="icon" onclick="showPage('home')" viewBox="0 0 24 24" fill="white">
-                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                </svg>
-                <div class="username">
-                    itslokeshx
-                    <svg width="12" height="12" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
-                        <polyline points="6,9 12,15 18,9"/>
-                    </svg>
+            <div class="profile-header">
+                <img src="assets/settings.png" alt="Settings" class="header-icon">
+                <div class="username-container">
+                    <h1 class="profile-username">itslokeshx</h1>
                 </div>
-                <svg class="icon" viewBox="0 0 24 24" fill="white">
-                    <circle cx="12" cy="12" r="3"/>
-                    <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/>
-                </svg>
+                <img src="assets/thread.png" alt="Thread" class="header-icon">
             </div>
 
             <div class="profile-section">
                 <div class="profile-top">
-                    <div class="profile-pic">
-                        <div style="width: 100%; height: 100%; border-radius: 50%; background: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2240%22 fill=%22%23555%22/></svg>') center/cover; border: 3px solid black;"></div>
+                       <div class="story">
+                        <div class="story-pic has-story">
+                            <img src="assets/profile.png" alt="Virat Kohli" class="story-avatar">
+                        </div>
+                        <div class="story-name">Your story</div>
                     </div>
                     <div class="profile-stats">
                         <div class="stat">
@@ -47,11 +34,11 @@
                             <div class="stat-label">posts</div>
                         </div>
                         <div class="stat">
-                            <div class="stat-number">62</div>
+                            <div class="stat-number">108</div>
                             <div class="stat-label">followers</div>
                         </div>
                         <div class="stat">
-                            <div class="stat-number">88</div>
+                            <div class="stat-number">0</div>
                             <div class="stat-label">following</div>
                         </div>
                     </div>
@@ -59,7 +46,7 @@
 
                 <div class="profile-info">
                     <h3>Loki</h3>
-                    <p>Embarking pathless path 🚀</p>
+                    <p>Embarking pathless path  🌌</p>
                 </div>
 
                 <div class="profile-buttons">
@@ -103,24 +90,11 @@
         </div>
 
         <div class="bottom-nav">
-            <svg class="nav-icon active" onclick="showPage('home')" width="24" height="24" fill="white" viewBox="0 0 24 24">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                <polyline points="9,22 9,12 15,12 15,22"/>
-            </svg>
-            <svg class="nav-icon" width="24" height="24" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
-                <circle cx="11" cy="11" r="8"/>
-                <path d="m21 21-4.35-4.35"/>
-            </svg>
-            <svg class="nav-icon" width="24" height="24" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                <circle cx="9" cy="9" r="2"/>
-                <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
-            </svg>
-            <svg class="nav-icon" width="24" height="24" fill="none" stroke="white" stroke-width="2" viewBox="0 0 24 24">
-                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-            </svg>
-            <div class="nav-icon" onclick="showPage('profile')" style="width: 24px; height: 24px; border-radius: 50%; background: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2240%22 fill=%22%23555%22/></svg>') center/cover; border: 1px solid white;"></div>
-        </div>
+    <a href="index.html"> <img src="assets/home.png" class="nav-icon active" width="24" height="24" ></a> 
+          <img src="assets/Shape.png" class="nav-icon" width="24" height="24">
+          <img src="assets/upload.png" class="nav-icon" width="24" height="24">
+          <img src="assets/reel.png" class="nav-icon" width="24" height="24">
+        <a href="profile.html"><img src="assets/Avatar.png" class="nav-icon" onclick="showPage('profile')" style="width: 24px; height: 24px; border-radius: 50%; border: 1px solid white;"></a>
     </div>
 
 
