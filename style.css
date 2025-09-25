@@ -6,15 +6,17 @@
 }
 
 body {
+    background-color: #000;
+    min-height: 100vh;
     width: 100%;
-    background: #000;
-    position: relative;
 }
 
 .header {
     background-color: #000;
     border-bottom: 1px solid #262626;
-
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .header > div {
@@ -43,15 +45,14 @@ body {
     justify-content: flex-end;
 }
 
-/* Navbar Styles */
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 60px;
-    background: #fff;
-    border-bottom: 1px solid #dfdfdf;
+    background: #000;
+    border-bottom: 1px solid #262626;
     display: flex;
     justify-content: center;
     padding: 5px 0;
@@ -88,23 +89,37 @@ body {
     border-radius: 50%;
     background: #555;
 }        body {
-            background-color: #1a1a1a;
+            background-color: #000;
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             min-height: 100vh;
-            padding: 20px;
         }
 
         .phone-container {
-            width: 375px;
-            height: 812px;
             background-color: #000;
-            border-radius: 25px;
-            overflow: hidden;
+            width: 100%;
+            min-height: 100vh;
             position: relative;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        
+        @media screen and (min-width: 768px) {
+            body {
+                background-color: #1a1a1a;
+                padding: 20px;
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .phone-container {
+                width: 375px;
+                height: 812px;
+                border-radius: 25px;
+                overflow: hidden;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+                min-height: auto;
+            }
         }
 
         .status-bar {
